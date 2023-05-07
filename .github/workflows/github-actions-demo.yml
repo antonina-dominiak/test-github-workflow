@@ -9,8 +9,9 @@ jobs:
     job2:
         runs-on: ubuntu-latest
         steps:
-            - name: Pylint
-              uses: actions/checkout@v2  
+            - name: Uses
+              uses: actions/checkout@v2
+            - name: Pylint  
               run: |
                  pip install pylint
                  pylint .\app.py
